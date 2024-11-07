@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualization</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <h1>Sorting Algorithm Visualization</h1>
+    <form id="sort-form">
+        <label for="algorithm">Choose Algorithm:</label>
+        <select id="algorithm">
+            <option value="shellsort">Shell Sort</option>
+            <option value="insertionsort">Straight Insertion Sort</option>
+            <option value="selectionsort">Selection Sort</option>
+            <option value="bubblesort">Bubble Sort</option>
+        </select>
+        <label for="arrayInput">Array Elements (comma separated):</label>
+        <input type="text" id="arrayInput" name="arrayInput" value="64, 34, 25, 12, 22, 11, 90">
+        <button type="button" onclick="startSort()">Start Sort</button>
+    </form>
+    <canvas id="visualization" width="800" height="400"></canvas>
+    <div id="info"></div>
+</div>
+</body>
+</html>
